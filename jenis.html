@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis Bencana - Bencana Coquette Biru</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --coquette-light: #F0F8FF; /* Alice Blue - Background */
+            --coquette-blue: #ADD8E6;  /* Light Blue - Utama */
+            --coquette-accent: #87CEEB; /* Sky Blue - Aksen */
+            --coquette-dark: #333366;  /* Deep Blue - Teks */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--coquette-light);
+            color: var(--coquette-dark);
+            min-height: 100vh;
+        }
+        .coquette-bg { background-color: var(--coquette-blue); }
+        .coquette-text { color: var(--coquette-dark); }
+        .coquette-shadow { box-shadow: 0 4px 6px -1px rgba(135, 206, 235, 0.5), 0 2px 4px -2px rgba(135, 206, 235, 0.5); }
+        .coquette-ribbon::before { content: '🎀'; margin-right: 0.5rem; }
+        .playfair-font { font-family: 'Playfair Display', serif; }
+
+        /* Style untuk kartu Jenis Bencana */
+        .disaster-card {
+            border-left: 5px solid var(--coquette-accent);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header dan Navigasi Konsisten -->
+    <header class="coquette-bg shadow-lg">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="coquette-text text-3xl playfair-font font-bold">
+                        🎀 Bencana Coquette
+                    </a>
+                </div>
+                <!-- Link Navigasi -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Beranda</a>
+                        <a href="jenis.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium coquette-shadow bg-white/70 transition duration-150">Jenis Bencana</a>
+                        <a href="kesiapsiagaan.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Kesiapsiagaan</a>
+                        <a href="saat.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Saat Bencana</a>
+                        <a href="setelah.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Setelah Bencana</a>
+                        <a href="kontak.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Kontak Darurat</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Konten Utama Jenis Bencana -->
+    <main class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl playfair-font font-bold coquette-text mb-8 text-center">
+            Jenis-Jenis Bencana 🌊
+        </h1>
+        <p class="text-center text-lg coquette-text opacity-90 mb-10">
+            Mengenal potensi bencana adalah langkah awal dari kesiapsiagaan yang anggun.
+        </p>
+
+        <!-- Daftar Kartu Bencana -->
+        <div class="space-y-6">
+            <!-- Gempa Bumi -->
+            <div class="bg-white p-6 rounded-2xl coquette-shadow disaster-card hover:translate-y-[-2px] transition duration-200">
+                <h2 class="text-2xl font-semibold mb-2 coquette-text">1. Gempa Bumi 🌍</h2>
+                <p class="text-sm opacity-80">Guncangan tiba-tiba akibat pergerakan lempeng bumi. Risiko tinggi di wilayah cincin api.</p>
+            </div>
+
+            <!-- Banjir -->
+            <div class="bg-white p-6 rounded-2xl coquette-shadow disaster-card hover:translate-y-[-2px] transition duration-200">
+                <h2 class="text-2xl font-semibold mb-2 coquette-text">2. Banjir 💧</h2>
+                <p class="text-sm opacity-80">Meluapnya air sungai/danau atau curah hujan tinggi yang merendam daratan. Penting untuk daerah dataran rendah.</p>
+            </div>
+
+            <!-- Tsunami -->
+            <div class="bg-white p-6 rounded-2xl coquette-shadow disaster-card hover:translate-y-[-2px] transition duration-200">
+                <h2 class="text-2xl font-semibold mb-2 coquette-text">3. Tsunami 🌊</h2>
+                <p class="text-sm opacity-80">Gelombang besar yang dipicu gempa bawah laut atau letusan gunung berapi. Ancamannya nyata di wilayah pesisir.</p>
+            </div>
+
+            <!-- Letusan Gunung Api -->
+            <div class="bg-white p-6 rounded-2xl coquette-shadow disaster-card hover:translate-y-[-2px] transition duration-200">
+                <h2 class="text-2xl font-semibold mb-2 coquette-text">4. Letusan Gunung Api 🌋</h2>
+                <p class="text-sm opacity-80">Keluarnya material dari perut bumi. Penting untuk mengetahui radius aman dan jalur evakuasi.</p>
+            </div>
+
+            <!-- Tanah Longsor -->
+            <div class="bg-white p-6 rounded-2xl coquette-shadow disaster-card hover:translate-y-[-2px] transition duration-200">
+                <h2 class="text-2xl font-semibold mb-2 coquette-text">5. Tanah Longsor ⛰️</h2>
+                <p class="text-sm opacity-80">Pergerakan massa tanah atau batuan dalam jumlah besar. Berisiko di lereng curam, terutama saat musim hujan.</p>
+            </div>
+        </div>
+        
+        <div class="mt-10 text-center">
+            <a href="kesiapsiagaan.html" class="inline-block coquette-bg coquette-text px-6 py-3 rounded-full font-semibold coquette-shadow hover:bg-opacity-80 transition duration-300">
+                Lanjut ke: Kesiapsiagaan →
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer Konsisten -->
+    <footer class="mt-12 coquette-bg text-center py-6 text-sm opacity-80">
+        &copy; 2025 Bencana Coquette Biru. Informasi untuk Kesiapsiagaan Indonesia.
+    </footer>
+</body>
+</html>

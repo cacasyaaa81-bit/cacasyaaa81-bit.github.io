@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saat Bencana - Bencana Coquette Biru</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --coquette-light: #F0F8FF;
+            --coquette-blue: #ADD8E6;
+            --coquette-accent: #87CEEB;
+            --coquette-dark: #333366;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--coquette-light);
+            color: var(--coquette-dark);
+            min-height: 100vh;
+        }
+        .coquette-bg { background-color: var(--coquette-blue); }
+        .coquette-text { color: var(--coquette-dark); }
+        .coquette-shadow { box-shadow: 0 4px 6px -1px rgba(135, 206, 235, 0.5), 0 2px 4px -2px rgba(135, 206, 235, 0.5); }
+        .coquette-ribbon::before { content: '🎀'; margin-right: 0.5rem; }
+        .playfair-font { font-family: 'Playfair Display', serif; }
+        .action-step {
+            border-bottom: 2px solid var(--coquette-accent);
+            padding-bottom: 0.75rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header dan Navigasi Konsisten -->
+    <header class="coquette-bg shadow-lg">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="coquette-text text-3xl playfair-font font-bold">
+                        🎀 Bencana Coquette
+                    </a>
+                </div>
+                <!-- Link Navigasi -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Beranda</a>
+                        <a href="jenis.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Jenis Bencana</a>
+                        <a href="kesiapsiagaan.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Kesiapsiagaan</a>
+                        <a href="saat.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium coquette-shadow bg-white/70 transition duration-150">Saat Bencana</a>
+                        <a href="setelah.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Setelah Bencana</a>
+                        <a href="kontak.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Kontak Darurat</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Konten Utama Saat Bencana -->
+    <main class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl playfair-font font-bold coquette-text mb-8 text-center">
+            Tindakan Cepat dan Tepat 🚨
+        </h1>
+        <p class="text-center text-lg coquette-text opacity-90 mb-10">
+            Ketenangan di saat genting menentukan keselamatan. Ikuti panduan sederhana ini.
+        </p>
+
+        <!-- Panduan Aksi Cepat -->
+        <div class="bg-white p-8 rounded-2xl coquette-shadow space-y-6">
+            <div class="action-step">
+                <h2 class="text-2xl font-bold mb-2 coquette-text">1. Tetap Tenang 🧘‍♀️</h2>
+                <p class="text-base opacity-90">Hindari kepanikan. Pikiran yang jernih memungkinkan Anda membuat keputusan terbaik dengan cepat.</p>
+            </div>
+
+            <div class="action-step">
+                <h2 class="text-2xl font-bold mb-2 coquette-text">2. Lindungi Diri (Drop, Cover, Hold On) 🛡️</h2>
+                <p class="text-base opacity-90">Jika terjadi gempa: Segera merunduk, berlindung di bawah meja kokoh, dan berpegangan erat. Jauhi jendela, cermin, dan benda berat.</p>
+            </div>
+
+            <div class="action-step">
+                <h2 class="text-2xl font-bold mb-2 coquette-text">3. Matikan Sumber Energi 🔥</h2>
+                <p class="text-base opacity-90">Jika aman, matikan listrik, gas, dan air untuk mencegah kebakaran, ledakan, atau korsleting.</p>
+            </div>
+
+            <div class="action-step">
+                <h2 class="text-2xl font-bold mb-2 coquette-text">4. Segera Evakuasi (Jika Diperlukan) 🏃‍♀️</h2>
+                <p class="text-base opacity-90">Jika ada peringatan evakuasi (misalnya tsunami atau banjir bandang), segera bergerak ke tempat tinggi/aman sesuai rute yang telah ditentukan. Jangan menunda untuk mengambil barang.</p>
+            </div>
+
+            <div class="action-step">
+                <h2 class="text-2xl font-bold mb-2 coquette-text">5. Gunakan Media Komunikasi Bijak 📞</h2>
+                <p class="text-base opacity-90">Gunakan telepon untuk pesan teks (SMS) daripada panggilan suara agar jaringan tidak terbebani. Hubungi hanya untuk keadaan darurat.</p>
+            </div>
+
+            <div class="mt-8 text-center bg-gray-50 p-4 rounded-xl">
+                <p class="text-sm font-semibold coquette-text">
+                    Selalu dengarkan instruksi resmi dari BPBD/BNPB atau pihak berwenang setempat.
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-10 text-center">
+            <a href="setelah.html" class="inline-block coquette-bg coquette-text px-6 py-3 rounded-full font-semibold coquette-shadow hover:bg-opacity-80 transition duration-300">
+                Lanjut ke: Langkah Setelah Bencana →
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer Konsisten -->
+    <footer class="mt-12 coquette-bg text-center py-6 text-sm opacity-80">
+        &copy; 2025 Bencana Coquette Biru. Informasi untuk Kesiapsiagaan Indonesia.
+    </footer>
+</body>
+</html>

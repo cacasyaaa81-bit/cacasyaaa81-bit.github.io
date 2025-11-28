@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Darurat - Bencana Coquette Biru</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --coquette-light: #F0F8FF;
+            --coquette-blue: #ADD8E6;
+            --coquette-accent: #87CEEB;
+            --coquette-dark: #333366;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--coquette-light);
+            color: var(--coquette-dark);
+            min-height: 100vh;
+        }
+        .coquette-bg { background-color: var(--coquette-blue); }
+        .coquette-text { color: var(--coquette-dark); }
+        .coquette-shadow { box-shadow: 0 4px 6px -1px rgba(135, 206, 235, 0.5), 0 2px 4px -2px rgba(135, 206, 235, 0.5); }
+        .coquette-ribbon::before { content: '🎀'; margin-right: 0.5rem; }
+        .playfair-font { font-family: 'Playfair Display', serif; }
+
+        /* Style untuk kontak */
+        .contact-card {
+            background-color: white;
+            transition: transform 0.2s;
+        }
+        .contact-card:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header dan Navigasi Konsisten -->
+    <header class="coquette-bg shadow-lg">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="coquette-text text-3xl playfair-font font-bold">
+                        🎀 Bencana Coquette
+                    </a>
+                </div>
+                <!-- Link Navigasi -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Beranda</a>
+                        <a href="jenis.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Jenis Bencana</a>
+                        <a href="kesiapsiagaan.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Kesiapsiagaan</a>
+                        <a href="saat.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Saat Bencana</a>
+                        <a href="setelah.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Setelah Bencana</a>
+                        <a href="kontak.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium coquette-shadow bg-white/70 transition duration-150">Kontak Darurat</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Konten Utama Kontak Darurat -->
+    <main class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl playfair-font font-bold coquette-text mb-8 text-center">
+            Kontak Penting di Saat Darurat 📞
+        </h1>
+        <p class="text-center text-lg coquette-text opacity-90 mb-10">
+            Simpan daftar kontak ini. Kecepatan berkomunikasi dapat menyelamatkan nyawa.
+        </p>
+
+        <!-- Daftar Kontak -->
+        <div class="grid md:grid-cols-2 gap-6">
+            
+            <!-- Darurat Umum (112) -->
+            <div class="contact-card p-6 rounded-2xl coquette-shadow">
+                <h2 class="text-2xl font-bold mb-1 coquette-text coquette-ribbon">Panggilan Darurat Terpadu</h2>
+                <p class="text-sm opacity-80 mb-3">Layanan terpadu untuk semua keadaan darurat.</p>
+                <a href="tel:112" class="coquette-bg coquette-text text-lg font-extrabold px-4 py-2 rounded-lg block text-center hover:opacity-90 transition duration-150">
+                    <span class="mr-2">☎️</span> 112
+                </a>
+            </div>
+
+            <!-- Ambulans (118/119) -->
+            <div class="contact-card p-6 rounded-2xl coquette-shadow">
+                <h2 class="text-2xl font-bold mb-1 coquette-text coquette-ribbon">Ambulans / Kesehatan</h2>
+                <p class="text-sm opacity-80 mb-3">Untuk bantuan medis dan keadaan darurat kesehatan.</p>
+                <a href="tel:118" class="coquette-bg coquette-text text-lg font-extrabold px-4 py-2 rounded-lg block text-center hover:opacity-90 transition duration-150">
+                    <span class="mr-2">🏥</span> 118 / 119
+                </a>
+            </div>
+
+            <!-- Pemadam Kebakaran (113) -->
+            <div class="contact-card p-6 rounded-2xl coquette-shadow">
+                <h2 class="text-2xl font-bold mb-1 coquette-text coquette-ribbon">Pemadam Kebakaran</h2>
+                <p class="text-sm opacity-80 mb-3">Layanan cepat saat terjadi kebakaran.</p>
+                <a href="tel:113" class="coquette-bg coquette-text text-lg font-extrabold px-4 py-2 rounded-lg block text-center hover:opacity-90 transition duration-150">
+                    <span class="mr-2">🚒</span> 113
+                </a>
+            </div>
+
+            <!-- Polisi (110) -->
+            <div class="contact-card p-6 rounded-2xl coquette-shadow">
+                <h2 class="text-2xl font-bold mb-1 coquette-text coquette-ribbon">Kepolisian</h2>
+                <p class="text-sm opacity-80 mb-3">Untuk laporan kriminalitas atau gangguan keamanan.</p>
+                <a href="tel:110" class="coquette-bg coquette-text text-lg font-extrabold px-4 py-2 rounded-lg block text-center hover:opacity-90 transition duration-150">
+                    <span class="mr-2">🚓</span> 110
+                </a>
+            </div>
+
+        </div>
+        
+        <div class="mt-10 p-6 coquette-bg rounded-xl coquette-shadow">
+            <h3 class="text-xl font-bold coquette-text mb-2">Penting untuk Diketahui:</h3>
+            <p class="text-sm opacity-90">Angka-angka ini adalah kontak nasional. Pastikan Anda juga menyimpan nomor BPBD (Badan Penanggulangan Bencana Daerah) dan kantor polisi setempat, karena respons mereka mungkin lebih cepat di tingkat lokal.</p>
+        </div>
+        
+        <div class="mt-10 text-center">
+            <a href="index.html" class="inline-block coquette-text px-6 py-3 rounded-full font-semibold border border-coquette-dark hover:coquette-bg transition duration-300">
+                ← Kembali ke Beranda
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer Konsisten -->
+    <footer class="mt-12 coquette-bg text-center py-6 text-sm opacity-80">
+        &copy; 2025 Bencana Coquette Biru. Informasi untuk Kesiapsiagaan Indonesia.
+    </footer>
+</body>
+</html>

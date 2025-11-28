@@ -1,130 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ClimateAware - Informasi Lingkungan</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Bencana Coquette Biru</title>
+    <!-- Memuat Tailwind CSS untuk styling yang cantik dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Definisi Palet Warna Coquette Biru */
+        :root {
+            --coquette-light: #F0F8FF; /* Alice Blue - Background */
+            --coquette-blue: #ADD8E6;  /* Light Blue - Utama */
+            --coquette-accent: #87CEEB; /* Sky Blue - Aksen */
+            --coquette-dark: #333366;  /* Deep Blue - Teks */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--coquette-light);
+            color: var(--coquette-dark);
+            min-height: 100vh;
+        }
+        /* Custom Styling for Coquette Aesthetic */
+        .coquette-bg { background-color: var(--coquette-blue); }
+        .coquette-text { color: var(--coquette-dark); }
+        .coquette-shadow { box-shadow: 0 4px 6px -1px rgba(135, 206, 235, 0.5), 0 2px 4px -2px rgba(135, 206, 235, 0.5); }
+        .coquette-ribbon::before {
+            content: '🎀';
+            margin-right: 0.5rem;
+        }
+        .playfair-font { font-family: 'Playfair Display', serif; }
+    </style>
 </head>
-<body>
-  <div class="container">
-    <header class="header">
-      <a href="index.html" class="brand">
-        <div class="logo" aria-hidden>CA</div>
-        <div>
-          <div style="font-weight:800">ClimateAware</div>
-          <div class="small">Info & aksi lingkungan</div>
-        </div>
-      </a>
-
-      <nav class="nav" aria-label="Main navigation">
-        <a href="index.html">Beranda</a>
-        <a href="issues.html">Isu</a>
-        <a href="solutions.html">Solusi</a>
-        <a href="data.html">Data</a>
-        <a href="action.html">Ambil Tindakan</a>
-        <a href="resources.html">Resources</a>
-        <a href="contact.html">Kontak</a>
-      </nav>
+<body class="antialiased">
+    <!-- Header dan Navigasi Konsisten -->
+    <header class="coquette-bg shadow-lg">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="coquette-text text-3xl playfair-font font-bold">
+                        🎀 Bencana Coquette
+                    </a>
+                </div>
+                <!-- Link Navigasi -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium coquette-shadow bg-white/70 transition duration-150">Beranda</a>
+                        <a href="jenis.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Jenis Bencana</a>
+                        <a href="kesiapsiagaan.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Kesiapsiagaan</a>
+                        <a href="saat.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Saat Bencana</a>
+                        <a href="setelah.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Setelah Bencana</a>
+                        <a href="kontak.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Kontak Darurat</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero-left">
-          <div class="tag">Peduli Bumi</div>
-          <h1 class="h-title">Informasi Lingkungan yang mudah diakses</h1>
-          <p class="h-sub">Pelajari isu iklim, solusi sederhana, dan cara ambil tindakan di komunitas Anda — praktis & ramah pemula.</p>
-          <div class="cta-row">
-            <a class="btn" href="issues.html">Jelajahi Isu</a>
-            <a class="btn secondary" href="action.html">Mulai Bertindak</a>
-          </div>
+    <!-- Konten Utama Halaman Beranda -->
+    <main class="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h1 class="text-5xl playfair-font font-extrabold coquette-text mb-4">
+                Selamat Datang di Portal Kesiapsiagaan 🎀
+            </h1>
+            <p class="text-xl coquette-text opacity-80 mb-8 max-w-3xl mx-auto">
+                Elegansi dan kelembutan dalam menghadapi keadaan darurat. Bersama, kita tingkatkan pengetahuan untuk menjaga diri dan sesama.
+            </p>
         </div>
 
-        <aside class="visual" aria-hidden>
-          <div class="small-card">
-            <div style="font-weight:700;margin-bottom:8px">Status Global</div>
-            <div class="kpi">
-              <div>
-                <div class="num">+1.1°C</div>
-                <div class="label">Rata-rata kenaikan suhu</div>
-              </div>
-              <div style="margin-left:auto;text-align:right">
-                <div class="small">CO₂ (2024)</div>
-                <div style="font-weight:700">419 ppm</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="small-card">
-            <div style="font-weight:700;margin-bottom:8px">Aksi Cepat</div>
-            <ul class="small">
-              <li>Kurangi sampah plastik</li>
-              <li>Tanam pohon lokal</li>
-              <li>Pilih transportasi rendah emisi</li>
-            </ul>
-          </div>
-        </aside>
-      </section>
-
-      <section class="content">
-        <div class="main">
-          <div class="card">
-            <h2 style="margin-top:0">Ringkasan</h2>
-            <p class="small">Website ini bertujuan menjadi pusat informasi ringkas mengenai isu lingkungan, solusi sehari-hari, dan sumber belajar. Gunakan menu di atas untuk menavigasi.</p>
-          </div>
-
-          <div class="grid">
-            <div class="card">
-              <h3>Isu Utama</h3>
-              <p class="small">Perubahan iklim, deforestasi, polusi plastik, dan kehilangan keanekaragaman hayati.</p>
-              <a class="btn secondary" href="issues.html">Pelajari lebih</a>
+        <!-- Kartu Informasi Utama -->
+        <div class="grid md:grid-cols-3 gap-8 mt-10">
+            <!-- Kartu 1: Pelajari Jenis Bencana -->
+            <div class="bg-white p-6 rounded-2xl coquette-shadow hover:coquette-shadow transition duration-300">
+                <div class="coquette-text text-4xl mb-3">🌪️</div>
+                <h2 class="text-xl font-bold mb-2 coquette-text">Pahami Risiko Anda</h2>
+                <p class="text-sm opacity-90 mb-4">Setiap wilayah memiliki ancaman bencana yang berbeda. Pelajari jenis-jenis bencana yang mungkin terjadi di sekitar Anda.</p>
+                <a href="jenis.html" class="text-sm font-semibold coquette-text border-b border-current hover:opacity-70 transition">Lihat Jenis Bencana →</a>
             </div>
 
-            <div class="card">
-              <h3>Solusi Praktis</h3>
-              <p class="small">Tindakan harian yang berdampak: hemat energi, daur ulang, konsumsi bijak.</p>
-              <a class="btn secondary" href="solutions.html">Ide solusi</a>
+            <!-- Kartu 2: Persiapan Diri -->
+            <div class="bg-white p-6 rounded-2xl coquette-shadow hover:coquette-shadow transition duration-300">
+                <div class="coquette-text text-4xl mb-3">🛍️</div>
+                <h2 class="text-xl font-bold mb-2 coquette-text">Siapkan Tas Darurat</h2>
+                <p class="text-sm opacity-90 mb-4">Pastikan Anda memiliki perlengkapan dasar yang penting, tersusun rapi dan mudah dijangkau saat diperlukan.</p>
+                <a href="kesiapsiagaan.html" class="text-sm font-semibold coquette-text border-b border-current hover:opacity-70 transition">Cek Daftar Kesiapsiagaan →</a>
             </div>
 
-            <div class="card">
-              <h3>Data & Fakta</h3>
-              <p class="small">Ringkasan statistik dengan visual sederhana untuk memperjelas tren.</p>
-              <a class="btn secondary" href="data.html">Lihat data</a>
+            <!-- Kartu 3: Tindakan Cepat -->
+            <div class="bg-white p-6 rounded-2xl coquette-shadow hover:coquette-shadow transition duration-300">
+                <div class="coquette-text text-4xl mb-3">⏱️</div>
+                <h2 class="text-xl font-bold mb-2 coquette-text">Bertindak Tepat</h2>
+                <p class="text-sm opacity-90 mb-4">Ketenangan adalah kunci. Ketahui langkah-langkah yang harus diambil segera saat alarm bencana berbunyi.</p>
+                <a href="saat.html" class="text-sm font-semibold coquette-text border-b border-current hover:opacity-70 transition">Panduan Saat Bencana →</a>
             </div>
-
-            <div class="card">
-              <h3>Ambil Tindakan</h3>
-              <p class="small">Checklist langkah yang bisa Anda mulai hari ini, untuk rumah & komunitas.</p>
-              <a class="btn secondary" href="action.html">Mulai sekarang</a>
-            </div>
-          </div>
         </div>
 
-        <aside>
-          <div class="card">
-            <h4 style="margin-top:0">Sumber Cepat</h4>
-            <ul class="card-list small">
-              <li>IPCC — Ringkasan singkat</li>
-              <li>UNEP — Laporan</li>
-              <li>Database lokal (placeholder)</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h4>Newsletter</h4>
-            <p class="small">Masukkan email (contoh non-fungsi di demo ini)</p>
-            <input style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6f2f4" placeholder="email@contoh.com">
-            <div style="height:10px"></div>
-            <a class="btn" href="#">Daftar</a>
-          </div>
-        </aside>
-      </section>
+        <div class="mt-12 text-center p-8 coquette-bg rounded-xl coquette-shadow">
+            <p class="text-2xl font-semibold playfair-font coquette-dark">
+                "Kesiapsiagaan bukanlah tentang panik, tapi tentang kesadaran yang indah."
+            </p>
+        </div>
     </main>
 
-    <footer class="footer">
-      <div>© <strong>ClimateAware</strong> — Edukasi & Aksi</div>
-      <div class="small">Dibuat dengan ♻ oleh Anda</div>
+    <!-- Footer Konsisten -->
+    <footer class="mt-12 coquette-bg text-center py-6 text-sm opacity-80">
+        &copy; 2025 Bencana Coquette Biru. Informasi untuk Kesiapsiagaan Indonesia.
     </footer>
-  </div>
 </body>
 </html>

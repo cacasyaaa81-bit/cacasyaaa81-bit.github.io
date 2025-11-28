@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setelah Bencana - Bencana Coquette Biru</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --coquette-light: #F0F8FF;
+            --coquette-blue: #ADD8E6;
+            --coquette-accent: #87CEEB;
+            --coquette-dark: #333366;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--coquette-light);
+            color: var(--coquette-dark);
+            min-height: 100vh;
+        }
+        .coquette-bg { background-color: var(--coquette-blue); }
+        .coquette-text { color: var(--coquette-dark); }
+        .coquette-shadow { box-shadow: 0 4px 6px -1px rgba(135, 206, 235, 0.5), 0 2px 4px -2px rgba(135, 206, 235, 0.5); }
+        .coquette-ribbon::before { content: '🎀'; margin-right: 0.5rem; }
+        .playfair-font { font-family: 'Playfair Display', serif; }
+
+        /* Style untuk bagian pemulihan */
+        .recovery-section {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header dan Navigasi Konsisten -->
+    <header class="coquette-bg shadow-lg">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="coquette-text text-3xl playfair-font font-bold">
+                        🎀 Bencana Coquette
+                    </a>
+                </div>
+                <!-- Link Navigasi -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Beranda</a>
+                        <a href="jenis.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Jenis Bencana</a>
+                        <a href="kesiapsiagaan.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Kesiapsiagaan</a>
+                        <a href="saat.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Saat Bencana</a>
+                        <a href="setelah.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium coquette-shadow bg-white/70 transition duration-150">Setelah Bencana</a>
+                        <a href="kontak.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Kontak Darurat</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Konten Utama Setelah Bencana -->
+    <main class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl playfair-font font-bold coquette-text mb-8 text-center">
+            Langkah Pemulihan yang Tenang 💖
+        </h1>
+        <p class="text-center text-lg coquette-text opacity-90 mb-10">
+            Pemulihan adalah proses bertahap. Jaga diri, jaga lingkungan, dan saling mendukung.
+        </p>
+
+        <div class="space-y-6">
+            <!-- Bagian 1: Pemeriksaan Keamanan -->
+            <div class="recovery-section coquette-shadow">
+                <h2 class="text-2xl font-bold mb-3 coquette-text coquette-ribbon">1. Prioritas Keamanan Diri</h2>
+                <ul class="list-none space-y-2 pl-0 text-base opacity-90">
+                    <li class="flex items-start"><span class="coquette-text mr-2">⭐</span> Periksa Diri: Pastikan tidak ada luka serius. Beri pertolongan pertama jika perlu.</li>
+                    <li class="flex items-start"><span class="coquette-text mr-2">⭐</span> Waspada Bahaya Susulan: Hati-hati terhadap gempa susulan atau potensi tanah longsor.</li>
+                    <li class="flex items-start"><span class="coquette-text mr-2">⭐</span> Cek Rumah: Jangan masuk rumah jika bau gas atau ada kerusakan struktural yang jelas.</li>
+                </ul>
+            </div>
+
+            <!-- Bagian 2: Komunikasi dan Informasi -->
+            <div class="recovery-section coquette-shadow">
+                <h2 class="text-2xl font-bold mb-3 coquette-text coquette-ribbon">2. Berkomunikasi & Minta Bantuan</h2>
+                <ul class="list-none space-y-2 pl-0 text-base opacity-90">
+                    <li class="flex items-start"><span class="coquette-text mr-2">⭐</span> Kontak Keluarga: Kirim pesan teks untuk memberi tahu Anda aman.</li>
+                    <li class="flex items-start"><span class="coquette-text mr-2">⭐</span> Dengarkan Berita Resmi: Tetap ikuti radio atau sumber berita resmi untuk panduan lebih lanjut.</li>
+                    <li class="flex items-start"><span class="coquette-text mr-2">⭐</span> Laporkan Kerusakan: Segera laporkan kerusakan serius kepada pihak berwenang setempat.</li>
+                </ul>
+            </div>
+
+            <!-- Bagian 3: Kesehatan Mental -->
+            <div class="coquette-bg p-6 rounded-2xl coquette-shadow">
+                <h2 class="text-2xl font-bold mb-3 coquette-text coquette-ribbon">3. Jaga Kesehatan Mental Anda</h2>
+                <p class="text-base opacity-90">Normal jika Anda merasa cemas, takut, atau sedih. Cari dukungan dari orang terdekat. Istirahat yang cukup adalah bagian dari pemulihan.</p>
+                <a href="kontak.html" class="text-sm font-semibold coquette-dark border-b border-current hover:opacity-70 transition block mt-3">Lihat Kontak Dukungan →</a>
+            </div>
+        </div>
+
+        <div class="mt-10 text-center">
+            <a href="kontak.html" class="inline-block coquette-bg coquette-text px-6 py-3 rounded-full font-semibold coquette-shadow hover:bg-opacity-80 transition duration-300">
+                Lanjut ke: Kontak Darurat →
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer Konsisten -->
+    <footer class="mt-12 coquette-bg text-center py-6 text-sm opacity-80">
+        &copy; 2025 Bencana Coquette Biru. Informasi untuk Kesiapsiagaan Indonesia.
+    </footer>
+</body>
+</html>

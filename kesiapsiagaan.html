@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kesiapsiagaan - Bencana Coquette Biru</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --coquette-light: #F0F8FF;
+            --coquette-blue: #ADD8E6;
+            --coquette-accent: #87CEEB;
+            --coquette-dark: #333366;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--coquette-light);
+            color: var(--coquette-dark);
+            min-height: 100vh;
+        }
+        .coquette-bg { background-color: var(--coquette-blue); }
+        .coquette-text { color: var(--coquette-dark); }
+        .coquette-shadow { box-shadow: 0 4px 6px -1px rgba(135, 206, 235, 0.5), 0 2px 4px -2px rgba(135, 206, 235, 0.5); }
+        .coquette-ribbon::before { content: '🎀'; margin-right: 0.5rem; }
+        .playfair-font { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header dan Navigasi Konsisten -->
+    <header class="coquette-bg shadow-lg">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="coquette-text text-3xl playfair-font font-bold">
+                        🎀 Bencana Coquette
+                    </a>
+                </div>
+                <!-- Link Navigasi -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Beranda</a>
+                        <a href="jenis.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Jenis Bencana</a>
+                        <a href="kesiapsiagaan.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium coquette-shadow bg-white/70 transition duration-150">Kesiapsiagaan</a>
+                        <a href="saat.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Saat Bencana</a>
+                        <a href="setelah.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Setelah Bencana</a>
+                        <a href="kontak.html" class="coquette-text px-3 py-2 rounded-lg text-sm font-medium hover:bg-white/70 transition duration-150">Kontak Darurat</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Konten Utama Kesiapsiagaan -->
+    <main class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl playfair-font font-bold coquette-text mb-8 text-center">
+            Panduan Kesiapsiagaan Diri ✨
+        </h1>
+        <p class="text-center text-lg coquette-text opacity-90 mb-10">
+            Persiapan sebelum bencana adalah wujud dari kepedulian diri yang paling elegan.
+        </p>
+
+        <!-- Bagian 1: Dokumen dan Rencana -->
+        <div class="bg-white p-8 rounded-2xl coquette-shadow mb-8">
+            <h2 class="text-2xl font-bold mb-4 coquette-text coquette-ribbon">Rencana Keluarga & Dokumen</h2>
+            <ul class="list-none space-y-3 pl-0">
+                <li class="flex items-start">
+                    <span class="coquette-text mr-2 text-xl">✓</span>
+                    <span class="text-base opacity-90">Tentukan lokasi berkumpul jika terpisah dari keluarga.</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="coquette-text mr-2 text-xl">✓</span>
+                    <span class="text-base opacity-90">Simpan fotokopi dokumen penting (akta, KTP, ijazah) dalam wadah anti air.</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="coquette-text mr-2 text-xl">✓</span>
+                    <span class="text-base opacity-90">Pelajari rute evakuasi terdekat dari rumah dan tempat kerja/sekolah.</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Bagian 2: Tas Siaga Bencana (Survival Kit) -->
+        <div class="coquette-bg p-8 rounded-2xl coquette-shadow mb-8">
+            <h2 class="text-2xl font-bold mb-4 coquette-text coquette-ribbon">Isi Tas Siaga Bencana (Survival Kit)</h2>
+            <p class="mb-4 text-sm opacity-90">Tas ini harus selalu siap dan mudah dibawa, berisi kebutuhan untuk setidaknya 72 jam (3 hari).</p>
+            
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="p-4 bg-white rounded-lg">
+                    <h3 class="font-semibold coquette-text mb-1">Kebutuhan Dasar 🧺</h3>
+                    <ul class="list-disc list-inside text-sm opacity-80 ml-2">
+                        <li>Makanan & Minuman (kemasan, kaleng)</li>
+                        <li>P3K Dasar dan obat-obatan pribadi</li>
+                        <li>Selimut/sleeping bag ringan</li>
+                        <li>Peluit untuk minta tolong</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-white rounded-lg">
+                    <h3 class="font-semibold coquette-text mb-1">Peralatan Penting 📱</h3>
+                    <ul class="list-disc list-inside text-sm opacity-80 ml-2">
+                        <li>Radio portabel & baterai cadangan</li>
+                        <li>Lampu senter & baterai/power bank</li>
+                        <li>Uang tunai secukupnya</li>
+                        <li>Pakaian ganti, jas hujan/ponco</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 text-center">
+            <a href="saat.html" class="inline-block coquette-bg coquette-text px-6 py-3 rounded-full font-semibold coquette-shadow hover:bg-opacity-80 transition duration-300">
+                Lanjut ke: Saat Bencana Terjadi →
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer Konsisten -->
+    <footer class="mt-12 coquette-bg text-center py-6 text-sm opacity-80">
+        &copy; 2025 Bencana Coquette Biru. Informasi untuk Kesiapsiagaan Indonesia.
+    </footer>
+</body>
+</html>
